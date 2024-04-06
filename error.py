@@ -1,10 +1,7 @@
-class Error(Exception):
-    pass
-
-class LargoExcedidoError(Error):
+class LargoExcedidoError(Exception):
     def __init__(self, mensaje):
         self.mensaje = mensaje
 
-class SubTipoInvalidoError(Error):
+class SubTipoInvalidoError(Exception):
     def __init__(self, mensaje):
         self.mensaje = mensaje
